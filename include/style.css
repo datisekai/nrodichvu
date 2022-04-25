@@ -1,0 +1,259 @@
+
+.slider{
+ 
+  width: 100%;
+  margin: 0 auto;
+  
+  overflow: hidden;
+}
+
+.slides{
+
+  width: 500%;
+  height: 300px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+  background-size: cover;
+  background-position: center;
+}
+
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: none;
+}
+
+.manual-btn{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #40D3DC;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: none;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #40D3DC;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #40D3DC;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #40D3DC;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #40D3DC;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #40D3DC;
+}
+      
+.first{
+ 
+  background-image: url(https://i.pinimg.com/originals/05/41/8c/05418cf00cfe79e957c9c359f972eb5d.jpg);
+}
+
+.second{
+  background-image: url(https://i.pinimg.com/originals/f8/2d/2c/f82d2c63f85b3b5b1024be9bc1278d0f.jpg);
+}
+
+.third{
+  background-image: url(https://a-static.besthdwallpaper.com/super-saiyan-rage-trunks-tu-dragon-ball-super-4k-hinh-nen-3440x1440-55959_15.jpg);
+}
+
+.four{
+  background-image: url(https://i2.wp.com/kamywallpaper.com/wp-content/uploads/2020/11/nggallery_import/taihinhnenanime-dragon-ball-wallpapers-2.jpg);
+}
+
+/* MODAL - PAY */
+.modal__pay {
+        visibility: hidden;
+        opacity: 0;
+        transform: visibility 0s, opacity 1s;
+} 
+.modal__pay-overlay{
+ position: fixed;
+ top: 0;
+ right: 0;
+ bottom: 0;
+ left: 0;
+ background-color: rgba(0,0,0,0.3);
+ z-index: 11;
+ 
+}
+
+.modal__pay-content{
+  top: 20%;
+  right: 30%;
+  /* transform: translate(75%,10%); */
+  position: fixed;
+  width: 40%;
+  padding-bottom: 20px;
+  height: auto;
+  text-align: center;
+  background-color: white;
+  z-index: 12;
+  border-radius: 10px;
+  
+  }
+
+
+.modal-confirm{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 12px 20px;
+ color: black;
+}
+
+.modal-confirm-heading{
+ font-size: 20px;
+ font-family: sans-serif;
+ font-weight: 700;
+}
+
+.btn-close{
+ font-size: 18px;
+ font-weight: 900;
+}
+
+.btn-close:hover{
+ cursor: pointer;
+ opacity: 0.5;
+}
+
+.modal-instruct{
+ padding: 8px;
+ font-family: sans-serif;
+ font-size: 16px;
+ color: red;
+}
+
+.modal-info{
+ padding: 8px;
+ color: black;
+}
+
+.modal-info-heading{
+ font-size: 14px;
+ font-weight: 600;
+ font-family: sans-serif;
+ padding: 8px;
+}
+
+.modal-info-list{
+ list-style: none;
+ position: relative;
+}
+
+.modal-info-item{
+ padding: 8px;
+ font-size: 14px;
+ font-weight: 400;
+ font-family: sans-serif;
+}
+
+.span-btn{
+ font-size: 20px;
+ color: red;
+}
+
+.pay-btn{
+ padding: 10px 20px;
+ border:  none;
+ font-size: 14px;
+ margin-left: 16px;
+ background-color: #42BB2E;
+}
+
+.pay-btn:hover{
+ cursor: pointer;
+ opacity: 0.5;
+ color: white;
+ background-color: red;
+}
+
+.my-wallet {
+ color: #42BB2E;
+ font-size: 18px;
+}
+
+
+a:hover{
+ cursor: pointer;
+ opacity: 0.5;
+}
+
+.modal-info-item-separate{
+ content: "";
+ border: 1px solid #ccc;
+ width: 100%;
+ border-top: none;
+ border-right: none;
+ border-left: none;
+}
+
+.btnbuynow-active{
+  visibility: visible;
+  opacity: 1;
+}
